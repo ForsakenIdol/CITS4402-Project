@@ -64,10 +64,10 @@ This application implements the Linear Regression for Face Recognition algorithm
 
 The above is an image of my application in the middle of executing the LRC algorithm. Observe the following:
 
-1. I can see that 40 classes have been loaded, comprising a total of 400 images. Each image is of size 112 x 92, and after downsampling, 28 x 23.
-2. I have specified that there should be only **1** image per class in the training split for this particular execution. Because of this, my application is telling me that out of the 400 images loaded, 40 of them are in the training set, and 360 are in the test set.
-3. I've specified the delay timeout as **2 seconds**. This means that every time the GUI loads a new image, it will wait 2 seconds after the execution of the algorithm, image and metrics display, before it moves onto the next test image.
-4. This particular test image belonged to class `s7` and was correctly classified to `s7` based on the provided *minimum* class distance. Based on the result of this classification, the current accuracy (of all images up to and including this one), as well as the count of images classified, has been updated.
+1. I can see that 41 classes have been loaded, comprising a total of 410 images. Each image is of size 112 x 92, and after downsampling, 28 x 23.
+2. I have specified that there should be only **5** images per class in the training split for this particular execution. Because of this, my application is telling me that out of the 410 images loaded, 205 of them are in the training set, and 205 are in the test set.
+3. I've specified the delay timeout as **1 second**. This means that every time the GUI loads a new image, it will wait 1 second after the execution of the algorithm, image and metrics display, before it moves onto the next test image.
+4. This particular test image belonged to class `s16` and was correctly classified to `s16` based on the provided *minimum* class distance. Based on the result of this classification, the current accuracy (of all images up to and including this one), as well as the count of images classified, has been updated.
 
 ## Conclusion & Results
 
@@ -75,7 +75,9 @@ As is to be expected, the LRC algorithm for face classification implemented in t
 
 Out of the 40 default classes provided for this project, class `s1` was the most frequently misclassed; in fact, regardless of whether there were 1 or 9 training images per class, images from `s1` were very rarely classed correctly, and the first image displayed from this class was consistently incorrectly assigned a different class label.
 
-The most frequent incorrect label was class `s36`. This means that the images that were incorrectly classed were most likely assigned the `s36` class label. This label was most prominently incorrectly assigned to class `s1` and to other classes when there were less than 7 images in the training set.
+The most frequent incorrect label was class `s9`. This means that the images that were incorrectly classed were most likely assigned the `s9` class label. This label was most prominently incorrectly assigned to class `s1` and to other classes when there were less than 7 images in the training set.
+
+We experimented with one additional class using face images from a member of our group. The additional of this extra class did not substantially alter the accuracy of our classifier. The new class can be found in folder `s41`.
 
 ## Project Members
 
