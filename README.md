@@ -60,7 +60,7 @@ This application implements the Linear Regression for Face Recognition algorithm
 
 ## The Graphical User Interface (GUI)
 
-<image src="https://cdn.discordapp.com/attachments/427068629486534667/832869203119308800/LRC_App_GUI_in_Action.PNG"/>
+![GUI Screnshot](https://raw.githubusercontent.com/ForsakenIdol/CITS4402-Project/master/assets/gui_screenshot.png)
 
 The above is an image of my application in the middle of executing the LRC algorithm. Observe the following:
 
@@ -80,7 +80,7 @@ The most frequent incorrect label was class `s36`. This means that the images th
 ## Project Members
 
 - [Lachlan D Whang](https://github.com/ForsakenIdol)
-- [Seamooo](https://github.com/Seamooo)
+- [Seamus Mulholland-Patterson](https://github.com/Seamooo)
 - [Haolin Wu](https://github.com/Dragonite)
 
 ## References
