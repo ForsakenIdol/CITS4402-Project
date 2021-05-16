@@ -60,7 +60,7 @@ This application implements the Linear Regression for Face Recognition algorithm
 
 ## The Graphical User Interface (GUI)
 
-![GUI Screnshot](https://raw.githubusercontent.com/ForsakenIdol/CITS4402-Project/master/assets/gui_screenshot.png)
+<image src="https://cdn.discordapp.com/attachments/823141543195050017/843376775266172958/gui_screenshot.png">
 
 The above is an image of my application in the middle of executing the LRC algorithm. Observe the following:
 
