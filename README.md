@@ -4,12 +4,13 @@ This **README** file addresses the details behind the face recognition and class
 
 ## Folder Contents
 
-The submission folder should contain the following:
+The submission folder should contain the following, with the exception of the `FaceDataset` folder:
 
 ```
 CITS4402-Project
 ├── README.md                           <-- The file you are currently reading.                     
-├── project_app.mlapp                   <-- The project application, containing all the project code.
+├── project_app.m                       <-- The project application '.m' file, containing all the project code.
+├── s41                                 <-- Our additional, custom class, containing 10 image files.
 └── FaceDataset/                        <-- The folder containing all the facial images.
      ├── s1/                            <-- The name of the first class.
      │    ├── 1.pgm                     <-- The first image in class "s1".
@@ -38,9 +39,9 @@ CITS4402-Project
 
 To run this GUI...
 
-1. Load and execute the `project_app.mlapp` file in AppDesigner.
+1. Load and execute the `project_app.m` file in MATLAB.
 2. Click on `Load Classes` (the left-hand button) to load the directory containing all the images, organized into classes as per the **Folder Contents** section given above (the `FaceDataset` folder).
-3. Set the `Training Images per Class` slider, then click on `Classify Test Images` to run the program.
+3. Set the `Training Images per Class` and the `Delay Timeout for Display (Seconds)` sliders, then click on `Classify Test Images` to run the program.
 
 ## Notes
 
