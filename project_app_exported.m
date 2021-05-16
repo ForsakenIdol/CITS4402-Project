@@ -287,7 +287,8 @@ classdef project_app_exported < matlab.apps.AppBase
             face_folders = dir(face_path); % Get each unique class in the face folder.
             % How many valid classes are there?
             % Valid class names start with an 's'.
-            classes = {};
+            classes = strings(length(face_folders));
+            class_idx = 1;
             for face_folders_i = 1:length(face_folders)
                 if ~face_folders(face_folders_i).isdir
                     continue
@@ -295,10 +296,10 @@ classdef project_app_exported < matlab.apps.AppBase
                 if length(regexp(face_folders(face_folders_i).name, "^s\d+")) == 0
                     continue
                 end
-                classes = [classes,[face_folders(face_folders_i).name]];
+                classes(class_idx) = face_folders(face_folders_i).name;
+                class_idx = class_idx + 1;
             end
-
-            classes
+            classes = classes(1:class_idx-1);
 
             % Add the classes array to the global scope.
             % We can't use "sortrows" on the classes array because it is a row array.
