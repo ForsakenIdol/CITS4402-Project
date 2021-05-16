@@ -263,7 +263,7 @@ classdef project_app_exported < matlab.apps.AppBase
                 
                 [dist, index] = min(all_distances);
                 class_distance = dist;
-                class_label = sprintf("s%d", index);
+                class_label = app.classnames(index);
                 
                 % Display the corresponding image for the closest class.
                 sample_class_img = imread(app.trainingimagepaths(index,2));
@@ -376,7 +376,7 @@ classdef project_app_exported < matlab.apps.AppBase
                     for i = 1:test_dims(1) % For each row... (Test Class)
                         
                         % Generate the true class label
-                        true_class_label = sprintf("s%d", i);
+                        true_class_label = app.classnames(i);
                         
                         img = imread(app.testimagepaths(i,j));
                         imshow(img, 'Parent', app.InputTestImageDisplay);
