@@ -285,11 +285,16 @@ classdef project_app_exported < matlab.apps.AppBase
             face_path = uigetdir();
             fprintf(1, "User opened path: %s\n", face_path);
             face_folders = dir(face_path); % Get each unique class in the face folder.
-            
             % How many valid classes are there?
             % Valid class names start with an 's'.
             num_valid_classes = 0;
             for face_folders_i = 1:length(face_folders)
+                if ~face_folders(face_folders_i).isdir
+                    continue
+                end
+                if ~regexp(face_folders(face_folders_i).name, "^s\\d+")
+                    continue
+                end
                 if face_folders(face_folders_i).name(1) == 's'
                     num_valid_classes = num_valid_classes + 1;
                 end
