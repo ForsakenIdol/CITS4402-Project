@@ -81,7 +81,7 @@ The most frequent incorrect label was class `s36`. This means that the images th
 
 - [Lachlan D Whang](https://github.com/ForsakenIdol)
 - [Seamooo](https://github.com/Seamooo)
-- [Dragonite](https://github.com/Dragonite)
+- [Haolin Wu](https://github.com/Dragonite)
 
 ## References
 
