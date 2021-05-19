@@ -10,7 +10,7 @@ The submission folder should contain the following, with the exception of the `F
 CITS4402-Project
 ├── README.md                           <-- The file you are currently reading.                     
 ├── project_app.m                       <-- The project application '.m' file, containing all the project code.
-├── s41                                 <-- Our additional, custom class, containing 10 image files.
+├── s41/                                <-- Our additional, custom class, containing 10 image files.
 └── FaceDataset/                        <-- The folder containing all the facial images.
      ├── s1/                            <-- The name of the first class.
      │    ├── 1.pgm                     <-- The first image in class "s1".
@@ -35,7 +35,7 @@ CITS4402-Project
      ├── ...                            <-- As many classes as there are unique faces in the dataset.
 ```
 
-## Execution Instructions
+## Execution Procedure
 
 To run this GUI...
 
@@ -49,7 +49,7 @@ Some important information needs to be touched on.
 
 1. All the images are greyscale, with 112 rows and 92 columns of pixels, and are of the `.pgm` file type. When adding new images, please ensure that they are **also** greyscale and conform to the specified dimensions and filetype.
 2. Each class has 10 images. When introducing a new class, please ensure that it has **at least** 10 images.
-3. Please follow the naming convention given in the `FaceDataset` folder. Each class has the name `s<num>` where `<num>` is the next consecutive number from the previous class.
+3. Please follow the naming convention given in the `FaceDataset` folder. Each class has the name `s<num>` where `<num>` is the next consecutive number from the previous class. The program will assign these numbers to the corresponding classes.
 
 ## The Method
 
